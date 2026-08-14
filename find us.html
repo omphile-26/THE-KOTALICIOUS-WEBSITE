@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kotalicious | Find Us</title>
+  <style>
+    .site-header {
+      background: transparent;
+      padding: 10px 20px 0;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .site-header .marquee {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .site-header .marquee h1 {
+      display: inline-block;
+      margin: 0;
+      color: #ff9f1c;
+      font-size: 2.8rem;
+      font-weight: 900;
+      letter-spacing: 1px;
+      animation: marquee 12s linear infinite;
+    }
+
+    .site-header h2 {
+      color: #000000;
+      margin: 8px 0 12px;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    .site-header nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .site-header nav a {
+      color: #000000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .find-us-title {
+      color: red;
+    }
+
+    @keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+<body bgcolor="#f5f5f5">
+  <header class="site-header">
+    <div class="marquee">
+      <h1>MR KOTALICIOUS</h1>
+    </div>
+    <h2>MR KOTALICIOUS || THE KOTA KING</h2>
+    <h1 class="find-us-title">Find Us</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="order.html">Order</a>
+      <a href="about.html">About</a>
+      <a href="social media.html">Social Media</a>
+      <a href="Find us.html">Find Us</a>
+    </nav>
+    <hr color="orange">
+  </header>
+
+  <main>
+    <div class="find-us-container">
+      <div class="info-section">
+        <h2>Our Location</h2>
+
+        <div class="address-box">
+          <h3>Kotalicious - Braamfontein</h3>
+          <img src="images/maps.jpg" alt="Kota Classic" style="max-height: 180px;">
+          <img src="images/maps2.jpg" alt="Kota Classic" style="max-height: 180px;">
+          <img src="images/r4.jpeg" alt="Kota Classic" style="max-height: 180px;">
+
+          <p>
+            <strong>Address:</strong><br>
+            25 Biccard Street<br>
+            Braamfontein, Johannesburg<br>
+            2001, South Africa
+          </p>
+        </div>
+
+        <div class="contact-info">
+          <p>
+            <strong>Phone:</strong><br>
+            +27 (0)78 788 2985
+          </p>
+          <p>
+            <strong>Email:</strong><br>
+            info@kotalicious.co.za
+          </p>
+          <p>
+            <strong>WhatsApp:</strong><br>
+            +27 78 788 2985
+          </p>
+        </div>
+
+        <div class="hours-box">
+          <h3>Operating Hours</h3>
+          <ul>
+            <li>
+              <span>Monday - Friday:</span>
+              <span>09:00 AM - 10:00 PM</span>
+            </li>
+            <li>
+              <span>Saturday:</span>
+              <span>09:00 PM - 10:00 PM</span>
+            </li>
+            <li>
+              <span>Sunday:</span>
+              <span>12:00 PM - 8:00 PM</span>
+            </li>
+            <li>
+              <span>Public Holidays:</span>
+              <span>Closed</span>
+            </li>
+          </ul>
+          <div id="statusDisplay">
+            Currently Open
+          </div>
+        </div>
+      </div>
+
+      <div class="map-section">
+        <h2>Map</h2>
+        <div class="map-container" style="width: 50%; margin: 0 auto;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.5149074156443!2d28.033454!3d-26.196944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e957560c3c5c5c5%3A0x1234567890abcdef!2s25%20Biccard%20Street%2C%20Braamfontein%2C%20Johannesburg%2C%202001!5e0!3m2!1sen!2sza!4v1691234567890" width="100%" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="cta-section">
+          <a href="https://www.google.com/maps?q=25+Biccard+Street+Braamfontein+Johannesburg" target="_blank">
+            Get Directions
+          </a>
+          <br></br>
+          <a href="order.html">
+            Order Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <hr>
+    <p>&copy; 2026 Kotalicious | The Kota King of Braamfontein | OMPHILE MOILOA ST10516816</p>
+  </footer>
+</body>
+</html>

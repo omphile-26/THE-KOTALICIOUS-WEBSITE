@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kotalicious | Order Now</title>
+  <style>
+    .site-header {
+      background: transparent;
+      padding: 10px 20px 0;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .site-header .marquee {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .site-header .marquee h1 {
+      display: inline-block;
+      margin: 0;
+      color: #ff9f1c;
+      font-size: 2.8rem;
+      font-weight: 900;
+      letter-spacing: 1px;
+      animation: marquee 12s linear infinite;
+    }
+
+    .site-header h2 {
+      color: #000000;
+      margin: 8px 0 12px;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    .site-header nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .site-header nav a {
+      color: #000000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="marquee">
+      <h1>MR KOTALICIOUS</h1>
+    </div>
+    <h2>MR KOTALICIOUS || THE KOTA KING</h2>
+    <nav>
+     <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="order.html">Order</a>
+      <a href="about.html">About</a>
+      <a href="social media.html">Social Media</a>
+      <a href="Find us.html">Find Us</a>
+    </nav>
+    <hr color="orange">
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="order-section">
+        <h2>Place Your Order</h2>
+
+        <div class="customer-info">
+          <h3>Your Details</h3>
+          <div class="form-group">
+            <label for="customerName">Full Name *</label>
+            <input type="text" id="customerName" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="customerPhone">Phone Number *</label>
+            <input type="tel" id="customerPhone" placeholder="e.g., +27 123 456 7890" required>
+          </div>
+          <div class="form-group">
+            <label for="customerAddress">Delivery Address (Optional)</label>
+            <textarea id="customerAddress" placeholder="Enter your delivery address" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="customerNotes">Special Instructions (Optional)</label>
+            <textarea id="customerNotes" placeholder="Any special requests or dietary restrictions?" rows="2"></textarea>
+          </div>
+        </div>
+
+        <div class="menu-items">
+          <h3>Select Items</h3>
+          <p><strong>DRINKS ARE FREE IF YOU ORDER ON OUR WEBSITE</strong></p>
+
+          <table border="1" cellpadding="10" cellspacing="0" width="100%">
+            <tr>
+              <td width="35%" align="center">
+                <img src="images/25kota.jpeg" alt="Kota Classic" width="220" height="180">
+              </td>
+              <td valign="top">
+                <h3>Kiddies Bites</h3>
+                <p>Ingredients: Chakalaka / Artchaar, Lettuce, Chips, Vienna, Polony and special sauce</p>
+                <p><strong>R 24.90</strong></p>
+                <div class="quantity-control">
+                  <button>−</button>
+                  <input type="number" value="0" min="0">
+                  <button>+</button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td width="35%" align="center">
+                <img src="images/30kota.jpeg" alt="Kota Cheese Delight" width="220" height="180">
+              </td>
+              <td valign="top">
+                <h3>Tasty Bite</h3>
+                <p>Ingredients: Chakalaka / Artchaar, Lettuce, Chips, Vienna, Polony, cheese and special sauce</p>
+                <p><strong>R 29.90</strong></p>
+                <div class="quantity-control">
+                  <button>−</button>
+                  <input type="number" value="0" min="0">
+                  <button>+</button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td width="35%" align="center">
+                <img src="images/35kota.jpeg" alt="Kota Spicy Chicken" width="220" height="180">
+              </td>
+              <td valign="top">
+                <h3>M'jojo Bite</h3>
+                <p>Ingredients: Chakalaka / Artchaar, Lettuce, Chips, russian, Polony, cheese and special sauce</p>
+                <p><strong>R 34.90</strong></p>
+                <div class="quantity-control">
+                  <button>−</button>
+                  <input type="number" value="0" min="0">
+                  <button>+</button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td width="35%" align="center">
+                <img src="images/45.jpeg" alt="Kota Veggie Supreme" width="220" height="180">
+              </td>
+              <td valign="top">
+                <h3>Kotalicious Bite</h3>
+                <p>Ingredients: Chakalaka / Artchaar, Lettuce, Chips, russian, Polony, cheese, eggs and special sauce</p>
+                <p><strong>R 39.90</strong></p>
+                <div class="quantity-control">
+                  <button>−</button>
+                  <input type="number" value="0" min="0">
+                  <button>+</button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td width="35%" align="center">
+                <img src="images/cheesy.jpeg" alt="Cheesy Bite" width="220" height="180">
+              </td>
+              <td valign="top">
+                <h3>Cheesy Bite</h3>
+                <p>Ingredients: Chakalaka / Artchaar, Lettuce, Chips, russian, beef Patty, DOUBLE cheese*2, eggs and special sauce</p>
+                <p><strong>R 44.90</strong></p>
+                <div class="quantity-control">
+                  <button>−</button>
+                  <input type="number" value="0" min="0">
+                  <button>+</button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td width="35%" align="center">
+                <img src="images/50.jpeg" alt="Feast Bite" width="220" height="180">
+              </td>
+              <td valign="top">
+                <h3>Feast Bite</h3>
+                <p>Ingredients: Chakalaka / Artchaar, Lettuce, Chips, DOUBLE russian*2, Polony, cheese, eggs and special saucee</p>
+                <p><strong>R 49.90</strong></p>
+                <div class="quantity-control">
+                  <button>−</button>
+                  <input type="number" value="0" min="0">
+                  <button>+</button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td width="35%" align="center">
+                <img src="images/70.jpeg" alt="Ribster Bite" width="220" height="180">
+              </td>
+              <td valign="top">
+                <h3>Ribster Bite</h3>
+                <p>Ingredients: Chakalaka / Artchaar, Lettuce, Chips, ribs, Polony,DOUBLE cheese*2, eggs and special saucee</p>
+                <p><strong>R 69.90</strong></p>
+                <div class="quantity-control">
+                  <button>−</button>
+                  <input type="number" value="0" min="0">
+                  <button>+</button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td width="35%" align="center">
+                <img src="images/kota.jpg" alt="Medium Chips" width="220" height="180">
+              </td>
+              <td valign="top">
+                <h3>Medium CHIPS</h3>
+                <p>Ingredients: Chips, french toppings and special saucee</p>
+                <p><strong>R 25.00</strong></p>
+                <div class="quantity-control">
+                  <button>−</button>
+                  <input type="number" value="0" min="0">
+                  <button>+</button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td width="35%" align="center">
+                <img src="images/kota.jpg" alt="Large Chips" width="220" height="180">
+              </td>
+              <td valign="top">
+                <h3>Large CHIPS</h3>
+                <p>Ingredients: Chips, french toppings, cheese toppings and special saucee</p>
+                <p><strong>R 35.00</strong></p>
+                <div class="quantity-control">
+                  <button>−</button>
+                  <input type="number" value="0" min="0">
+                  <button>+</button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td width="35%" align="center">
+                <img src="images/150.jpeg" alt="Bite My Soul" width="220" height="180">
+              </td>
+              <td valign="top">
+                <h3>Bite My Soul</h3>
+                <p>Ingredients: Chakalaka / Artchaar, Lettuce, Chips,DOUBLE patty*2, DOUBLE russian*2, DOUBLE Polony, DOUBLE cheese*2, Cheesy toppings eggs and special saucee</p>
+                <p><strong>R 150.00</strong></p>
+                <div class="quantity-control">
+                  <button>−</button>
+                  <input type="number" value="0" min="0">
+                  <button>+</button>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="summary-section">
+        <h3>Order Summary</h3>
+        <div class="order-summary" id="orderSummary">
+          <div>No items selected yet</div>
+        </div>
+        <div class="summary-total" id="summaryTotal">Total: R 0.00</div>
+        <button class="whatsapp-btn" id="whatsappBtn">
+          Send Order via WhatsApp
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <hr>
+    <p>&copy; 2026 Kotalicious | The Kota King of Braamfontein | OMPHILE MOILOA ST10516816</p>
+  </footer>
+</body>
+</html>
