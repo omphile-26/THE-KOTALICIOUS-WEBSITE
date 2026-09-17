@@ -20,3 +20,12 @@ kotalicious/
 - **Find Us Page**: Address, contact info, operating hours, and embedded Google Map.  
 - **Social Media Page**: Customer testimonials, ratings, and links to Facebook/TikTok.  
 - **Responsive Layout**: Flexbox navigation and mobile‑friendly design.  
+
+## 📝 Change Log
+### 2026-09-17
+- Finished the order page styling with a polished branded layout, quantity controls, and sticky summary panel.
+- Improved the About page image layout and gallery styling for consistent sizing and spacing.
+- Updated the Social Media page image cards, testimonials layout, and social call-to-action styling.
+- Styled the Find Us page CTA buttons for “Get Directions” and “Order Now” to match the restaurant branding.
+- Removed repeated CSS rules to clean up the stylesheet and reduce conflicting styles.
+- Added consistent page-specific classes for improved maintainability and cleaner design structure.
