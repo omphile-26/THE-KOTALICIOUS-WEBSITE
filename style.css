@@ -935,7 +935,7 @@
     }
 
     .social-page .social-media-section {
-      background: rgba(255, 255, 255, 0.95);
+      background: rgba(249, 247, 247, 0.95);
       padding: 30px;
       border-radius: 12px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -969,6 +969,10 @@
       font-size: 1.03rem;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
       box-shadow: 0 5px 14px rgba(0, 0, 0, 0.15);
+      min-height: 64px;
+      border: 2px solid transparent;
+      opacity: 1;
+      visibility: visible;
     }
 
     .social-page .social-buttons a:hover {
@@ -976,12 +980,14 @@
       box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
     }
 
-    .social-page .social-buttons a:nth-child(1) {
+    .social-page .social-btn.facebook-btn {
       background: linear-gradient(135deg, #1877F2 0%, #0A66C2 100%);
     }
 
-    .social-page .social-buttons a:nth-child(2) {
+    .social-page .social-btn.tiktok-btn {
       background: linear-gradient(135deg, #000000 0%, #25F4EE 100%);
+      color: #ffffff;
+      border-color: rgba(255, 255, 255, 0.2);
     }
 
     .social-page .social-feeds {
@@ -1060,6 +1066,33 @@
       border-radius: 12px;
       margin: 14px auto 12px;
       border: 3px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .social-page .social-order-wrap {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .social-page .social-order-btn {
+      display: inline-block;
+      width: min(100%, 420px);
+      padding: 16px 28px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #ff7043, #f4511e);
+      color: #ffffff;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-weight: 700;
+      text-align: center;
+      box-shadow: 0 8px 18px rgba(255, 112, 67, 0.25);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .social-page .social-order-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 22px rgba(255, 112, 67, 0.35);
     }
 
     @media (max-width: 768px) {
