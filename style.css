@@ -75,7 +75,7 @@
       width: min(1200px, calc(100% - 24px));
       margin: 30px auto;
       animation: fadeInUp 0.8s ease-out both;
-      background: rgba(255, 255, 255, 0.72);
+      background: transparent;
       border-radius: 16px;
       padding: 20px;
     }
@@ -291,7 +291,7 @@
     }
 
     .menu-card {
-      background: rgba(255, 255, 255, 0.78);
+      background: rgba(255, 255, 255, 0.68);
       border-radius: 15px;
       padding: 15px;
       box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
@@ -522,7 +522,7 @@
       max-width: 1200px;
       margin: 30px auto;
       padding: 25px;
-      background: rgba(255, 255, 255, 0.95);
+      background: rgba(255, 255, 255, 0.68);
       border-radius: 16px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
     }
@@ -549,7 +549,7 @@
     }
 
     .customer-info {
-      background: linear-gradient(180deg, #fff7f4 0%, #fff 100%);
+      background: linear-gradient(180deg, rgba(255,247,244,0.8) 0%, rgba(255,255,255,0.68) 100%);
       padding: 22px 20px;
       border-radius: 12px;
       margin-bottom: 24px;
@@ -610,7 +610,7 @@
     .menu-items table {
       width: 100%;
       border-collapse: collapse;
-      background: rgba(255, 255, 255, 0.95);
+      background: rgba(255, 255, 255, 0.68);
       border: 1px solid rgba(255, 112, 67, 0.25);
       border-radius: 12px;
       overflow: hidden;
@@ -957,7 +957,7 @@
     }
 
     .social-page .testimonial-card {
-      background: rgba(255, 255, 255, 0.96);
+      background: rgba(255, 255, 255, 0.68);
       padding: 20px;
       border-radius: 12px;
       box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
