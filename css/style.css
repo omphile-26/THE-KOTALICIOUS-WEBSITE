@@ -1,6 +1,11 @@
 /*==========================================================
   BASE STYLES
 ==========================================================*/
+/*==========================================================
+  BASE STYLES
+  This file controls the shared layout, colour theme, spacing,
+  background image behaviour, and page-wide visual effects.
+==========================================================*/
     * {
       box-sizing: border-box;
     }
@@ -46,6 +51,11 @@
       }
     }
 
+    /*==========================================================
+      GLOBAL PAGE SETTINGS
+      Ensures the site fits correctly on all screen sizes and keeps
+      the background image visible without horizontal overflow.
+    ==========================================================*/
     html {
       margin: 0;
       padding: 0;
@@ -60,6 +70,12 @@
       overflow-x: hidden;
       animation: fadeInUp 0.7s ease-out both;
     }
+
+    /*==========================================================
+      BACKGROUND IMAGES
+      Relative paths are used because this stylesheet is inside the
+      css folder. The image files live in the parent images folder.
+    ==========================================================*/
 
     img, video, iframe, svg {
       display: block;
@@ -147,7 +163,7 @@
       height: 100%;
     }
     body {
-      background-image: url('images/kota.jpg'); /* path to your image */
+      background-image: url('../images/kota.jpg'); /* path to your image */
       background-size: cover;       /* makes image fill the screen */
       background-repeat: no-repeat; /* prevents tiling */
       background-position: center center;  /* centers the image */
@@ -176,6 +192,9 @@
       box-shadow: 0 12px 26px rgba(0, 0, 0, 0.2);
     }
 
+    /*==========================================================
+      BUTTON STYLES
+    ==========================================================*/
     /*==========================================================
       BUTTON STYLES
     ==========================================================*/
@@ -273,7 +292,7 @@
       color: red;
     }
     body {
-      background-image: url('images/backmenu.jpg'); /* path to your image */
+      background-image: url('../images/backmenu.jpg'); /* path to your image */
       background-size: cover;       /* makes image fill the screen */
       background-repeat: no-repeat; /* prevents tiling */
       background-position: center center;  /* centers the image */
@@ -510,7 +529,7 @@
     }
 
     body {
-      background-image: url('images/backmenu.jpg');
+      background-image: url('../images/backmenu.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
@@ -522,7 +541,7 @@
       max-width: 1200px;
       margin: 30px auto;
       padding: 25px;
-      background: rgba(255, 255, 255, 0.68);
+      background: rgba(255, 255, 255, 0.82);
       border-radius: 16px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
     }

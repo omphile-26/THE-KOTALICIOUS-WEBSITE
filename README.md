@@ -1,25 +1,37 @@
-# MR-KOTALICIOUS-PART-01
-HTML STRUCTURE
+# MR KOTALICIOUS | PART 01
+
+## Project Structure
 kotalicious/
 │
-├── index.html        # Home page
-├── menu.html         # Menu page
-├── about.html        # About page
-├── contact.html      # Contact page
-├── style.css         # External stylesheet
-│
-├── images/           # Folder for images (e.g., home.jpg, chefs.jpg)
-├── videos/           # Folder for videos (e.g., kotalicious.mp4)
-└── README.md         # Documentation file
+├── home.html            # Home page
+├── menu.html            # Menu page
+├── about.html           # About page
+├── order.html           # Order page
+├── find us.html         # Find Us page
+├── social media.html    # Social Media page
+├── css/
+│   └── style.css        # Main stylesheet
+├── images/              # Restaurant and product photos
+├── js/                  # JavaScript files if added later
+├── documents/           # Project documents or references
+├── README.md            # Project documentation
+└── .git/                # Git repository files
+
 ## 🚀 Features
-- **Animated Header**: Marquee effect for “MR KOTALICIOUS” across all pages.  
-- **Home Page**: Introductory video, operating hours, and quick links to menu/order.  
-- **Menu Page**: Grid of food items with images, descriptions, and prices.  
-- **About Page**: Brand story, mission, chef highlights, and reasons to choose Kotalicious.  
-- **Order Page**: Customer details form, item selection with quantity controls, and WhatsApp order button.  
-- **Find Us Page**: Address, contact info, operating hours, and embedded Google Map.  
-- **Social Media Page**: Customer testimonials, ratings, and links to Facebook/TikTok.  
-- **Responsive Layout**: Flexbox navigation and mobile‑friendly design.  
+- Animated marquee header and branded navigation styling across the website
+- Home page video hero with CTA buttons and operating hours section
+- Menu page with a responsive card grid, food descriptions, and order button
+- About page with gallery, story, mission, and chef highlight content
+- Order page with customer details form and quantity selection layout
+- Find Us page with address, map section, and direction/order buttons
+- Social Media page with testimonials, ratings, and Facebook/TikTok links
+- Transparent content panels that keep the background image visible
+- Responsive layout for mobile, tablet, and desktop screens
+
+## 🔧 Style Notes
+- The stylesheet is now stored in the css folder.
+- Background image paths must use relative paths such as ../images/backmenu.jpg.
+- Transparent panels and card backgrounds were adjusted to keep the pattern image visible without reducing readability.
 
 ## 📝 Change Log
 ### 2026-09-17
