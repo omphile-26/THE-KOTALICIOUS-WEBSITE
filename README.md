@@ -29,3 +29,6 @@ kotalicious/
 - Styled the Find Us page CTA buttons for “Get Directions” and “Order Now” to match the restaurant branding.
 - Removed repeated CSS rules to clean up the stylesheet and reduce conflicting styles.
 - Added consistent page-specific classes for improved maintainability and cleaner design structure.
+- Fixed responsive layout issues across devices so the website fits properly on phones, tablets, laptops, and desktops.
+- Centered the home page video and corrected the About page image alignment for a cleaner visual layout.
+- Standardized the menu chips image sizing and upgraded the Order Now call-to-action to a wide, prominent button.

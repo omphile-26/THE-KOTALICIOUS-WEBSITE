@@ -1,4 +1,41 @@
 /*home page css*/
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    img, video, iframe, svg {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    a, button, input, textarea {
+      max-width: 100%;
+    }
+
+    main {
+      width: min(1200px, calc(100% - 24px));
+      margin: 30px auto;
+    }
+
+    .site-header {
+      width: 100%;
+    }
+
 /* Animate heading from right to left */
     .move-heading {
       position: relative;
@@ -67,11 +104,20 @@
       padding: 20px;
     }
 
+    .video-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin: 20px auto;
+    }
+
     video {
-      width: 80%;       /* scales video to fit nicely */
-      max-width: 600px; /* prevents it from being too large */
+      width: min(80%, 600px);
+      display: block;
       border: 3px solid #ff7043;
       border-radius: 10px;
+      margin: 0 auto;
     }
 
     .cta-buttons {
@@ -187,6 +233,9 @@
       box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
       text-align: left;
       color: #333;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
     }
 
     .menu-card img {
@@ -195,6 +244,19 @@
       object-fit: cover;
       border-radius: 10px;
       margin-bottom: 10px;
+      display: block;
+    }
+
+    .chips-card {
+      margin-top: 20px;
+    }
+
+    .chips-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      display: block;
     }
 
     .menu-card h3 {
@@ -214,6 +276,34 @@
       margin-top: 8px;
     }
 
+    .menu-cta-wrap {
+      display: flex;
+      justify-content: center;
+      margin: 28px 0 10px;
+    }
+
+    .menu-order-btn {
+      display: inline-block;
+      width: min(100%, 420px);
+      padding: 16px 28px;
+      background: linear-gradient(135deg, #ff7043, #f4511e);
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.1rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      border-radius: 12px;
+      box-shadow: 0 8px 18px rgba(255, 112, 67, 0.25);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .menu-order-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 22px rgba(255, 112, 67, 0.35);
+    }
+
     @media (max-width: 900px) {
       .menu-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -223,6 +313,52 @@
     @media (max-width: 600px) {
       .menu-grid {
         grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .site-header {
+        padding: 16px 12px 10px;
+      }
+
+      .site-header nav {
+        gap: 8px 10px;
+      }
+
+      .site-header nav a {
+        font-size: 0.82rem;
+      }
+
+      body {
+        background-attachment: scroll;
+      }
+
+      main {
+        width: min(100%, calc(100% - 18px));
+        padding: 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .site-header h2 {
+        font-size: 0.9rem;
+      }
+
+      .marquee h1 {
+        font-size: 1.7rem;
+      }
+
+      .hours-section li,
+      .hours-box li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+      }
+
+      .cta-buttons a,
+      .cta-button {
+        width: 100%;
+        text-align: center;
       }
     }
 
