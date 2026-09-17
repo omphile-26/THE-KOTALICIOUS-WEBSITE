@@ -3,6 +3,44 @@
       box-sizing: border-box;
     }
 
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(22px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes floatUp {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-6px);
+      }
+    }
+
+    @keyframes pulseGlow {
+      0% {
+        box-shadow: 0 0 0 rgba(255, 112, 67, 0.1);
+      }
+      100% {
+        box-shadow: 0 0 18px rgba(255, 112, 67, 0.28);
+      }
+    }
+
+    @keyframes shimmer {
+      0% {
+        background-position: -200% 0;
+      }
+      100% {
+        background-position: 200% 0;
+      }
+    }
+
     html {
       margin: 0;
       padding: 0;
@@ -15,6 +53,7 @@
       min-width: 320px;
       max-width: 100%;
       overflow-x: hidden;
+      animation: fadeInUp 0.7s ease-out both;
     }
 
     img, video, iframe, svg {
@@ -30,10 +69,12 @@
     main {
       width: min(1200px, calc(100% - 24px));
       margin: 30px auto;
+      animation: fadeInUp 0.8s ease-out both;
     }
 
     .site-header {
       width: 100%;
+      animation: fadeInUp 0.6s ease-out both;
     }
 
 /* Animate heading from right to left */
@@ -86,6 +127,8 @@
 
     nav a:hover {
       color: #ff7043;
+      transform: translateY(-1px);
+      transition: color 0.2s ease, transform 0.2s ease;
     }
     html, body {
       margin: 0;
@@ -110,6 +153,7 @@
       align-items: center;
       width: 100%;
       margin: 20px auto;
+      animation: floatUp 4s ease-in-out infinite;
     }
 
     video {
@@ -118,6 +162,7 @@
       border: 3px solid #ff7043;
       border-radius: 10px;
       margin: 0 auto;
+      box-shadow: 0 12px 26px rgba(0, 0, 0, 0.2);
     }
 
     .cta-buttons {
@@ -137,13 +182,15 @@
       font-size: 1.1em;
       font-weight: bold;
       border-radius: 25px;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
       border: 2px solid #ff7043;
+      animation: pulseGlow 2.2s ease-in-out infinite alternate;
     }
 
     .cta-buttons a:hover {
       background-color: #e64a19;
       border-color: #e64a19;
+      transform: translateY(-2px) scale(1.02);
     }
 
     .cta-buttons a.secondary {
@@ -236,6 +283,13 @@
       display: flex;
       flex-direction: column;
       height: 100%;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      animation: fadeInUp 0.7s ease-out both;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-6px) scale(1.01);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.22);
     }
 
     .menu-card img {
@@ -245,6 +299,12 @@
       border-radius: 10px;
       margin-bottom: 10px;
       display: block;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .menu-card:hover img {
+      transform: scale(1.02);
+      filter: saturate(1.1);
     }
 
     .chips-card {
@@ -303,10 +363,11 @@
       border-radius: 12px;
       box-shadow: 0 8px 18px rgba(255, 112, 67, 0.25);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
+      animation: pulseGlow 2.4s ease-in-out infinite alternate;
     }
 
     .menu-order-btn:hover {
-      transform: translateY(-2px);
+      transform: translateY(-2px) scale(1.01);
       box-shadow: 0 10px 22px rgba(255, 112, 67, 0.35);
     }
 
@@ -625,6 +686,7 @@
       position: sticky;
       top: 20px;
       box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 0.8s ease-out both;
     }
 
     .order-summary {
@@ -679,6 +741,7 @@
       align-items: center;
       justify-content: center;
       gap: 10px;
+      animation: pulseGlow 2.5s ease-in-out infinite alternate;
     }
 
     .whatsapp-btn:hover {
@@ -788,6 +851,14 @@
       box-shadow: 0 8px 18px rgba(0, 0, 0, 0.14);
       border: 3px solid rgba(255, 112, 67, 0.7);
       display: block;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 0.8s ease-out both;
+    }
+
+    .about-page .about-gallery img:hover,
+    .about-page .about-feature-image:hover {
+      transform: scale(1.02) translateY(-2px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
     }
 
     .about-page .about-feature-image {
@@ -804,6 +875,12 @@
       margin: 28px auto;
       max-width: 920px;
       text-align: left;
+      animation: fadeInUp 0.8s ease-out both;
+      transition: transform 0.25s ease;
+    }
+
+    .about-page .chefs-section:hover {
+      transform: translateY(-3px);
     }
 
     .about-page .chefs-section h3 {
@@ -870,6 +947,13 @@
       border-left: 5px solid #ff7043;
       position: relative;
       overflow: hidden;
+      animation: fadeInUp 0.8s ease-out both;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .social-page .testimonial-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
     }
 
     .social-page .testimonial-card::before {
@@ -982,7 +1066,7 @@
     }
 
     .social-page .social-buttons a:hover {
-      transform: translateY(-3px);
+      transform: translateY(-3px) scale(1.01);
       box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
     }
 
@@ -1094,6 +1178,7 @@
       text-align: center;
       box-shadow: 0 8px 18px rgba(255, 112, 67, 0.25);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
+      animation: pulseGlow 2.5s ease-in-out infinite alternate;
     }
 
     .social-page .social-order-btn:hover {
@@ -1127,6 +1212,13 @@
       padding: 30px;
       border-radius: 10px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      animation: fadeInUp 0.8s ease-out both;
+      transition: transform 0.25s ease;
+    }
+
+    .info-section:hover,
+    .map-section:hover {
+      transform: translateY(-4px);
     }
 
     .info-section h2 {
@@ -1239,6 +1331,8 @@
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
       display: flex;
       flex-direction: column;
+      animation: fadeInUp 0.9s ease-out both;
+      transition: transform 0.25s ease;
     }
 
     .map-section h2 {
@@ -1277,14 +1371,16 @@
       font-size: 1.1em;
       font-weight: bold;
       border-radius: 25px;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
       border: 2px solid #ff7043;
       margin: 10px;
+      animation: pulseGlow 2.6s ease-in-out infinite alternate;
     }
 
     .cta-button:hover {
       background-color: #e64a19;
       border-color: #e64a19;
+      transform: translateY(-2px) scale(1.01);
     }
 
     .cta-button.secondary {
