@@ -1,8 +1,5 @@
 /*==========================================================
   BASE STYLES
-==========================================================*/
-/*==========================================================
-  BASE STYLES
   This file controls the shared layout, colour theme, spacing,
   background image behaviour, and page-wide visual effects.
 ==========================================================*/
@@ -157,17 +154,8 @@
       transform: translateY(-1px);
       transition: color 0.2s ease, transform 0.2s ease;
     }
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    }
     body {
-      background-image: url('../images/kota.jpg'); /* path to your image */
-      background-size: cover;       /* makes image fill the screen */
-      background-repeat: no-repeat; /* prevents tiling */
-      background-position: center center;  /* centers the image */
-      background-attachment: fixed; /* keeps the background fixed during scrolling */
+      min-height: 100vh;
     }
      main {
       text-align: center;
@@ -192,9 +180,6 @@
       box-shadow: 0 12px 26px rgba(0, 0, 0, 0.2);
     }
 
-    /*==========================================================
-      BUTTON STYLES
-    ==========================================================*/
     /*==========================================================
       BUTTON STYLES
     ==========================================================*/
@@ -276,29 +261,7 @@
       color: #ff7043;
     }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: rgba(0, 0, 0, 0.85);
-      color: white;
-      margin-top: 30px;
-    }
-
     /*========================================================== menu styles ============================================*/
-    html, body {
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      color: red;
-    }
-    body {
-      background-image: url('../images/backmenu.jpg'); /* path to your image */
-      background-size: cover;       /* makes image fill the screen */
-      background-repeat: no-repeat; /* prevents tiling */
-      background-position: center center;  /* centers the image */
-      background-attachment: fixed; /* keeps the background fixed during scrolling */
-    }
-
     /*==========================================================
       MENU & CARD STYLES
     ==========================================================*/
@@ -405,18 +368,6 @@
     .menu-order-btn:hover {
       transform: translateY(-2px) scale(1.01);
       box-shadow: 0 10px 22px rgba(255, 112, 67, 0.35);
-    }
-
-    @media (max-width: 900px) {
-      .menu-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-    }
-
-    @media (max-width: 600px) {
-      .menu-grid {
-        grid-template-columns: 1fr;
-      }
     }
 
     @media (max-width: 768px) {
