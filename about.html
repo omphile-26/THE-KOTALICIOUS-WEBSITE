@@ -37,16 +37,19 @@
     </p>
 
     <div class="about-gallery">
-      <img src="images/kota1.jpeg" alt="Mr Kotalicious Kota 1">
-      <img src="images/kota2.jpeg" alt="Mr Kotalicious Kota 2">
-      <img src="images/kota3.jpeg" alt="Mr Kotalicious Kota 3">
+      <img src="images/kota1.jpeg" srcset="images/kota1.jpeg 1x, images/kota1.jpeg 2x" sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw" alt="Mr Kotalicious Kota 1">
+      <img src="images/kota2.jpeg" srcset="images/kota2.jpeg 1x, images/kota2.jpeg 2x" sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw" alt="Mr Kotalicious Kota 2">
+      <img src="images/kota3.jpeg" srcset="images/kota3.jpeg 1x, images/kota3.jpeg 2x" sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw" alt="Mr Kotalicious Kota 3">
     </div>
 
     <p>
       The menu features everything from classic slap chips, wraps, and dagwoods to signature quarter-loaves loaded with russians, polony, melted cheese, eggs, atchar, and chakalaka. Highlighting their lineup are massive creations like the Papaya Bite, the Ribster Bite, and the legendary Mr Kotalicious Bite—packed with four beef patties, six viennas, and triple cheese.
     </p>
     
-    <img class="about-feature-image" src="images/chefs.jpg" alt="Our chefs preparing food">
+    <picture>
+      <source media="(max-width: 600px)" srcset="images/chefs.jpg">
+      <img class="about-feature-image" src="images/chefs.jpg" srcset="images/chefs.jpg 1x, images/chefs.jpg 2x" sizes="(max-width: 600px) 100vw, 720px" alt="Our chefs preparing food">
+    </picture>
 
     <div class="chefs-section">
   <h3>The Chefs Behind the Flavor</h3>

@@ -32,6 +32,18 @@ kotalicious/
 - The stylesheet is now stored in the css folder.
 - Background image paths must use relative paths such as ../images/backmenu.jpg.
 - Transparent panels and card backgrounds were adjusted to keep the pattern image visible without reducing readability.
+- Shared CSS now includes a reset, type scale, relative spacing variables, desktop/tablet/mobile breakpoints, Grid/Flexbox layout rules, focus states, hover/active states, and reduced-motion support.
+- Content images use responsive `srcset`/`sizes` attributes, with a `picture` example on the About page.
+
+## Responsive Screenshot Evidence
+
+Capture browser device-emulation screenshots at these viewport sizes for submission:
+
+| Viewport | Evidence to check |
+| --- | --- |
+| Desktop: 1440 x 900 | Three-column menu grid, two-column Find Us layout, readable navigation |
+| Tablet: 768 x 1024 | Two-column menu grid, single-column content sections, no horizontal scrolling |
+| Mobile: 390 x 844 | Single-column cards, wrapping navigation and buttons, responsive images and map |
 
 ## 📝 Change Log
 ### 2026-09-17
